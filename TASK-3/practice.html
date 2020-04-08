@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>JsTask</title> 
+	<link rel="stylesheet" href="images/bootstrap.min.css">
+	<script src="images/jquery.min.js"></script> 
+	<script src="images/bootstrap.min.js"></script>
+	<style>
+	#dob input
+	{
+		width:30%;
+		height:50px;
+		border-radius:20px;
+		background-color:#b9f0b9;
+	}
+	</style>
+</head>
+<body>
+	<div class="container"  id="images" style="padding:10%; text-align:center;">
+		<h1 id="head" style="margin-bottom:3%;">Hover on Images to see the background effect and Me!!</h1>
+		<div class="row">
+			<div class="col-4">
+			<img class="img-fluid" src="images/1.jpeg" onmouseover="mouseover(this)" onmouseout="mouseout(this)"></div>
+			<div class="col-4">
+			<img class="img-fluid" src="images/2.jpeg" onmouseover="mouseover(this)" onmouseout="mouseout(this)"></div>
+			<div class="col-4">
+			<img class="img-fluid" src="images/3.jpeg" onmouseover="mouseover(this)" onmouseout="mouseout(this)"></div>
+		</div>
+	</div>
+	<div class="container" id="dob" style="padding:2%; text-align:center;">
+		<h1>Lets Play with your Date Of Birth</h1>
+		<label for="name">Enter Your Birthday</label>
+		<input type="text" name="year" placeholder="ex:dd/mm/yyyy"  id="input">
+		<button class="btn btn-primary" onclick="Cage()">Know your Age</button>
+		<p id="output"></p>
+	</div>
+	<div class="container" id="colors" style="padding:5%;">
+		<h1 id="tex">Lets Play with Random Colors</h1>
+		<button class="btn btn-warning" onclick="random1()">generate Theme</button>
+	</div>
+	<script src="images/JS.js"></script>
+</body>
+</html>
