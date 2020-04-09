@@ -45,13 +45,14 @@
 	{
 		let date1 = new Date();
 		let  dob= document.getElementById("input").value;
-		let date2=new Date(dob);
-		let pattern = /^\d{1,2}\/\d{1,2}\/\d{4}$/; //date format (dd/mm/yyyy)
-		if (pattern.test(dob)) 
+		dob=dob.split("/");
+		if(dob.length==3)
 		{
-			    var y1 = date1.getFullYear(); //getting current year
-			    var y2 = date2.getFullYear(); //getting dob year
-			    var age = y1 - y2;           //calculating age 
+			var o=new Date;
+			const a=new Date(dob[1]+"/"+dob[0]+"/"+dob[2]);
+			r=new Date(o.getDate()+"/"+o.getMonth()+"/"+o.getFullYear()),
+			l=Math.abs(dob[2]-o.getFullYear()),d=Math.ceil(l/864e5);
+
 			    out.innerHTML="==>You are "+age+" years old!!";
 			    out.style.color="#2809ed";
 		} 
