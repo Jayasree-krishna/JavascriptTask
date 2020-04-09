@@ -50,11 +50,10 @@
 		{
 			var o=new Date;
 			const a=new Date(dob[1]+"/"+dob[0]+"/"+dob[2]);
-			r=new Date(o.getDate()+"/"+o.getMonth()+"/"+o.getFullYear()),
-			l=Math.abs(dob[2]-o.getFullYear()),d=Math.ceil(l/864e5);
-
-			    out.innerHTML="==>You are "+age+" years old!!";
-			    out.style.color="#2809ed";
+			r=new Date(o.getDate()+"/"+o.getMonth()+"/"+o.getFullYear());
+			l=Math.abs(dob[2]-o.getFullYear());
+			out.innerHTML="==>You are "+l+" years old!!";
+			out.style.color="#2809ed";
 		} 
 		else 
 		{
