@@ -44,9 +44,10 @@
 	function Cage()
 	{
 		let date1 = new Date();
-		let  dob= document.getElementById("input").value;
-		dob=dob.split("/");
-		if(dob.length==3)
+		let dob1= document.getElementById("input").value;
+		dob=dob1.split("/");
+		var pattern = /^\d{1,2}\/\d{1,2}\/\d{4}$/; //to validate date format (dd/mm/yyyy)
+		if(dob.length==3 && pattern.test(dob1))
 		{
 			var o=new Date;
 			const a=new Date(dob[1]+"/"+dob[0]+"/"+dob[2]);
